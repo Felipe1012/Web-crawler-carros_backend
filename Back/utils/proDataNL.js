@@ -24,7 +24,6 @@ function proDataNL(resultNL) {
           
         }
 
-    
         console.log(relations)
 
         // Delete duplicates

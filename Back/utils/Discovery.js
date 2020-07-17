@@ -75,40 +75,33 @@ function main(params, text) {
         delete data[i].field
 
       }
-      respuesta=[]
+      respuesta = []
       data = JSON.stringify(data)
       data = data.replace(/\"passage_text":/g, " ");
+      data = data.replace(/\[{ \"/g, " ");
+
       console.log("yeah")
       var frases = data.split('$')
-      var hola=[]
+      var res = []
 
       console.log(data)
 
 
-      for(let i in frases){
-        hola[i]="$ "+frases[i]
-     
+      for (let i in frases) {
+        res[i] = "$ " + frases[i]
+
 
       }
-      for(let j in hola){
-        if(hola[j].length <=20){
-          hola.splice(j,1)
-         }
+      for (let j in res) {
+        if (res[j].length <= 20) {
+          res.splice(j, 1)
+        }
       }
-     
-      console.log(hola)
 
-        return resolve(hola)
+      console.log(res)
 
-      
+      return resolve(res)
 
-
-      
-
-
-     
-
-      
     });
   });
 }

@@ -17,22 +17,22 @@ router.post("/upload-text", async function (req, res) {
       });
     } else {
       let finalJson = [];
-      var response=
+      
       await main(params, inputText).then((ans) => {
-        for (let item of ans) {
-          callNLUnderstanding(params, item).then((data) => {
+        for (const item of ans) {
+          callNLUnderstanding(params, item).then((data) => 
             proDataNL(data).then((finalRes) => {
-              finalJson.push(finalRes);
-            
-                if(finalJson.length >= 15){
-                  res.send(finalJson)
-                }
-                
+              finalJson.push(finalRes)
+             
             })
-          })
+          )
         }
       });
-    
+      var delayInMilliseconds = 3000; //1 second
+      setTimeout(function() {
+        res.send(finalJson)
+      }, delayInMilliseconds);
+  
     }
   } catch (err) {
     res.status(500).json({ message: "No se pudo analizar el texto ingresado" });
