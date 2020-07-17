@@ -28,7 +28,7 @@ router.post("/upload-text", async function (req, res) {
           )
         }
       });
-      var delayInMilliseconds = 3000; //1 second
+      var delayInMilliseconds = 3000; 
       setTimeout(function() {
         res.send(finalJson)
       }, delayInMilliseconds);
