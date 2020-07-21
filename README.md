@@ -40,7 +40,13 @@ Tambien necesario ***collection_id*** que se obtienen por medio del siguiente co
 }' "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/collections?version=2019-04-30"
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+2. Credenciales Natural language Understanding.
+En el archivo ***params.json*** se encuentran las credenciales de los servicios cloud.
+```
+"nl_api_key": "URL DE SU SERVICIO",
+"nl_url": "APIKEY DE SU SERVICO",
+```
+![credenciales 2](https://user-images.githubusercontent.com/46906169/88112977-7d7aca00-cb76-11ea-8eb8-8766ba15d04f.png)
 
 ## Ejecutando las pruebas ⚙️
 
