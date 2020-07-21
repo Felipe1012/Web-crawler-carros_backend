@@ -2,10 +2,8 @@
 
 IBM Watson Discovery facilita la construcción de aplicaciones de exploración cognitivas y basadas en la nube que desbloquean los insights accionables que hay ocultos en los datos no estructurados. Esta demo utiliza usa una de las maneras para la ingesta de datos a Watson Discovery, un web crawler, para tomar información de tucarro.com y minar el contenido en cuanto a características de automóviles que se ofertan actualmente como lo son: precio, modelo, kilometraje, etc… 
 
-## Comenzando 🚀
-Para comenzar con esta demo es necesario:
- Tener una cuenta de IBM cloud, si aun no está creada en el siguiente enlace la puede crear. https://cloud.ibm.com/
-Crear un servicio de Watson Discovery
+## Arquitectura 🚀
+
 
 
 Mira **Deployment** para conocer como desplegar el proyecto.
@@ -14,17 +12,19 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 ### Pre-requisitos 📋
 
 Para comenzar con esta demo es necesario:
-- Tener una cuenta de IBM cloud, si aun no está creada en el siguiente enlace la puede crear. https://cloud.ibm.com/
-- Crear un servicio de Watson Discovey.
+- Tener una cuenta de IBM cloud, si aun no está creada en el siguiente enlace la puede crear [AQUI](https://cloud.ibm.com/).
+- Crear un servicio de **Object storage**.
+- Crear un servicio de **Watson Discovey**.
+- Crear un servicio de **Natural Language Understanding**.
+- Crear un servicio de **Knowlegde Studio**.
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+Es necesario cambiar las credenciales en el proyecto de los servicios nuevos que se creron en la cuenta personal de IBM cloud.
+1. Credenciales Object storage.
 
 ```
-Da un ejemplo
+
 ```
 
 _Y repite_
@@ -61,11 +61,8 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [IBM Watson Discovery](https://cloud.ibm.com/docs/discovery?topic=discovery-sources#connectwebcrawl) - Crawler web 
+* [Natural Language Understanding](https://www.ibm.com/co-es/cloud/watson-natural-language-understanding) - 
 
 ## Contribuyendo 🖇️
 
