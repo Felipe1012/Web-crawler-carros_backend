@@ -28,8 +28,9 @@
 
       <h2></h2>
           <div *ngFor="let item of respuesta" class="cardgeneral3">
+            <br>
             <div *ngFor="let item2 of item" class="resultado">
-              <div *ngFor="let item3 of item2" >
+              <div *ngFor="let item3 of item2" class=texto>
                 <hr>
                 <p *ngIf="item3.type=='ConValorDe'">Relacion: Valor </p>
                 <p *ngIf="item3.type=='Uso'">Relacion: Uso que tiene </p>

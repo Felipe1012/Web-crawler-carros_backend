@@ -4,7 +4,6 @@
     margin-bottom: 0px;
     padding-bottom: 5px;
     position: relative;
-    font-family: Impact, fantasy;
     color:white;
     background-color: rgba(0, 0, 0, 0.603);
 
@@ -18,10 +17,13 @@
   display: inline-block;
   left: 50%;
   margin-left: 180px;
-  font-family: Impact, fantasy;
 
 }
+.texto{
+  margin-left: 20px;
+  margin-right: 20px;
 
+}
 
 .cardgeneral2 {
   justify-content: center;
@@ -61,7 +63,7 @@
   background-color: white;
   justify-content: center;
   width: 800px;
-  margin-left: 110px;
+  margin-left: 100px;
   border-radius: 20px;
 
 }
