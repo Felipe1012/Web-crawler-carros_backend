@@ -3,11 +3,7 @@
 IBM Watson Discovery facilita la construcción de aplicaciones de exploración cognitivas y basadas en la nube que desbloquean los insights accionables que hay ocultos en los datos no estructurados. Esta demo utiliza usa una de las maneras para la ingesta de datos a Watson Discovery, un web crawler, para tomar información de tucarro.com y minar el contenido en cuanto a características de automóviles que se ofertan actualmente como lo son: precio, modelo, kilometraje, etc… 
 
 ## Arquitectura 🚀
-
-
-
-Mira **Deployment** para conocer como desplegar el proyecto.
-
+![WhatsApp Image 2020-07-21 at 11 08 05 AM](https://user-images.githubusercontent.com/46906169/88103650-e6f2dc80-cb66-11ea-9963-32ef5e304002.jpeg)
 
 ### Pre-requisitos 📋
 
@@ -26,6 +22,7 @@ Es necesario cambiar las credenciales en el proyecto de los servicios nuevos que
 ```
 
 ```
+![credenciales](https://user-images.githubusercontent.com/46906169/88110643-2bd04080-cb72-11ea-855b-bc3e31472421.png)
 
 _Y repite_
 
