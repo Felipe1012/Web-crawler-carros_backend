@@ -17,10 +17,12 @@ Para comenzar con esta demo es necesario:
 ### Instalación 🔧
 
 Es necesario cambiar las credenciales en el proyecto de los servicios nuevos que se creron en la cuenta personal de IBM cloud.
-1. Credenciales Object storage.
+1. Credenciales Watson Discovery.
+En el archivo ***params.json*** se encuentran las credenciales de los servicios cloud.
 
 ```
-
+  "url": "https://api.us-east.discovery.watson.cloud.ibm.com/instances/3bb82015-27f7-4c67-be71-758ce4e10994",
+  "iam_apikey": "ypt5FzCEvgK8SACrfX-oXhQfiEKBxuFBUNbuMH9jGxry"
 ```
 ![credenciales](https://user-images.githubusercontent.com/46906169/88110643-2bd04080-cb72-11ea-855b-bc3e31472421.png)
 
@@ -61,34 +63,12 @@ _Agrega notas adicionales sobre como hacer deploy_
 * [IBM Watson Discovery](https://cloud.ibm.com/docs/discovery?topic=discovery-sources#connectwebcrawl) - Crawler web 
 * [Natural Language Understanding](https://www.ibm.com/co-es/cloud/watson-natural-language-understanding) - 
 
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
 ## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
+ [Uso de Api Watson Discovery](https://cloud.ibm.com/apidocs/discovery)
+ [Uso de Api NLU](https://cloud.ibm.com/apidocs/natural-language-understanding)
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+Equipo tecnico Data & AI IBM Colombia
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
