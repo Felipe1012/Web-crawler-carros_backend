@@ -79,6 +79,8 @@ function main(params, text) {
       data = JSON.stringify(data)
       data = data.replace(/\"passage_text":/g, " ");
       data = data.replace(/\[{ \"/g, " ");
+      data = data.replace(/\\"}]"/g, " ");
+      data = data.replace(/\\"},{ \\/g, " ");
 
       console.log("yeah")
       var frases = data.split('$')

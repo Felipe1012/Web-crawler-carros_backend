@@ -22,14 +22,11 @@ const logger = require("morgan");
 
 const router = require("./routes/router");
 
-var title = 'Web Gallery S3 ICOS';
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 app.use(cors());
-var Controller = require('./controllers/Controllers')(title);
-app.use('/list', Controller.obtenerfile);
 
 app.use(logger("dev"));
 app.use(cookieParser());
