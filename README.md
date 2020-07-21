@@ -48,6 +48,13 @@ En el archivo ***params.json*** se encuentran las credenciales de los servicios 
 ```
 ![credenciales 2](https://user-images.githubusercontent.com/46906169/88112977-7d7aca00-cb76-11ea-8eb8-8766ba15d04f.png)
 
+Es necesario ***model_id*** que se genera a partir del siguiente comando cURL.
+```
+curl --user "apikey:{apikey}" "{url}/v1/models?version=2019-07-12"
+
+```
+Las solicitudes de API requieren un parámetro de versión que tome una fecha en el formato **version=YYYY-MM-DD**. 
+
 ## Ejecutando las pruebas ⚙️
 
 _Explica como ejecutar las pruebas automatizadas para este sistema_
