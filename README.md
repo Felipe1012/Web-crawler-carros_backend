@@ -26,6 +26,7 @@ En el archivo ***params.json*** se encuentran las credenciales de los servicios 
 ```
 ![credenciales](https://user-images.githubusercontent.com/46906169/88110643-2bd04080-cb72-11ea-855b-bc3e31472421.png)
 
+Las solicitudes de API requieren un parámetro de versión que tome una fecha en el formato **version=YYYY-MM-DD**. 
 Es necesario ***environment_id*** que se obtienen por medio del siguiente comando cURL.
 ```
   curl -u "apikey":"{apikey}" "https://gateway.watsonplatform.net/discovery/api/v1/environments?version=2019-04-30"
@@ -53,7 +54,6 @@ Es necesario ***model_id*** que se genera a partir del siguiente comando cURL.
 curl --user "apikey:{apikey}" "{url}/v1/models?version=2019-07-12"
 
 ```
-Las solicitudes de API requieren un parámetro de versión que tome una fecha en el formato **version=YYYY-MM-DD**. 
 
 ## Ejecutando las pruebas ⚙️
 
