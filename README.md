@@ -1,4 +1,4 @@
-# Watson Discovery Demo: Web crawler carros
+# IBM Watson Discovery Demo: Web crawler carros
 
 IBM Watson Discovery facilita la construcción de aplicaciones de exploración cognitivas y basadas en la nube que desbloquean los insights accionables que hay ocultos en los datos no estructurados. Esta demo utiliza usa una de las maneras para la ingesta de datos a Watson Discovery, un web crawler, para tomar información de tucarro.com y minar el contenido en cuanto a características de automóviles que se ofertan actualmente como lo son: precio, modelo, kilometraje, etc… 
 
@@ -21,18 +21,39 @@ Es necesario cambiar las credenciales en el proyecto de los servicios nuevos que
 En el archivo ***params.json*** se encuentran las credenciales de los servicios cloud.
 
 ```
-  "url": "https://api.us-east.discovery.watson.cloud.ibm.com/instances/3bb82015-27f7-4c67-be71-758ce4e10994",
-  "iam_apikey": "ypt5FzCEvgK8SACrfX-oXhQfiEKBxuFBUNbuMH9jGxry"
+  "url": "URL DE SU SERVICIO",
+  "iam_apikey": "APIKEY DE SU SERVICO"
 ```
 ![credenciales](https://user-images.githubusercontent.com/46906169/88110643-2bd04080-cb72-11ea-855b-bc3e31472421.png)
 
-_Y repite_
+Las solicitudes de API requieren un parámetro de versión que tome una fecha en el formato **version=YYYY-MM-DD**. 
+Es necesario ***environment_id*** que se obtienen por medio del siguiente comando cURL.
+```
+  curl -u "apikey":"{apikey}" "https://gateway.watsonplatform.net/discovery/api/v1/environments?version=2019-04-30"
+```
+Tambien necesario ***collection_id*** que se obtienen por medio del siguiente comando cURL.
+```
+  curl -X POST -u "apikey":"{apikey}" -H "Content-Type: application/json" -d '{
+  "name": "test_collection",
+  "description": "My test collection",
+  "configuration_id": "{configuration_id}",
+  "language": "en"
+}' "https://gateway.watsonplatform.net/discovery/api/v1/environments/{environment_id}/collections?version=2019-04-30"
+```
+
+2. Credenciales Natural language Understanding.
+En el archivo ***params.json*** se encuentran las credenciales de los servicios cloud.
+```
+"nl_api_key": "URL DE SU SERVICIO",
+"nl_url": "APIKEY DE SU SERVICO",
+```
+![credenciales 2](https://user-images.githubusercontent.com/46906169/88112977-7d7aca00-cb76-11ea-8eb8-8766ba15d04f.png)
+
+Es necesario ***model_id*** que se genera a partir del siguiente comando cURL.
+```
+curl --user "apikey:{apikey}" "{url}/v1/models?version=2019-07-12"
 
 ```
-hasta finalizar
-```
-
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
 
 ## Ejecutando las pruebas ⚙️
 
@@ -60,12 +81,12 @@ _Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
-* [IBM Watson Discovery](https://cloud.ibm.com/docs/discovery?topic=discovery-sources#connectwebcrawl) - Crawler web 
-* [Natural Language Understanding](https://www.ibm.com/co-es/cloud/watson-natural-language-understanding) - 
+* [IBM Watson Discovery](https://cloud.ibm.com/docs/discovery?topic=discovery-sources#connectwebcrawl) 
+* [IBM Natural Language Understanding](https://www.ibm.com/co-es/cloud/watson-natural-language-understanding) 
 
 ## Wiki 📖
- [Uso de Api Watson Discovery](https://cloud.ibm.com/apidocs/discovery)
- [Uso de Api NLU](https://cloud.ibm.com/apidocs/natural-language-understanding)
+* [Uso de Api Watson Discovery](https://cloud.ibm.com/apidocs/discovery)
+* [Uso de Api NLU](https://cloud.ibm.com/apidocs/natural-language-understanding)
 ## Autores ✒️
 
 Equipo tecnico Data & AI IBM Colombia
