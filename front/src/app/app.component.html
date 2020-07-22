@@ -1,25 +1,22 @@
 <body>
-  <h1></h1>
-  <h1 class="title">
-    <div class="title" align="center">
-      <h1>Buscador de vehículos en Colombia</h1>
-    </div>
-  </h1>
-
-      <label for=""></label>
-      <h2></h2>
+  <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">Buscauto.com</span>
+  </nav>
+  
+      <h1></h1>
       <div class="cardgeneral2">
         <h2></h2>
         <div class="col-xs-12">
           <form class="formGroup" [formGroup]="palabra">
             <h2></h2>
             <div class="input-field col s12">
-              <h1>Ingresa tu consulta</h1>
+              <h2>El carro de tus sueños en un click</h2>
               <input class="form-control" formControlName="datos" autofocus>
-              <h2></h2>
+              <small id="emailHelp" class="form-text text-muted">Puede hacer busquedas de marca o modelo, ej: ford fiesta.</small>
             </div>
-            <div class="mx-auto" style="width: 300px;">
-              <button class="btn btn-danger" (click)="nlu_text()">Buscar</button>
+            <h1></h1>
+            <div class="mx-auto" style="width: 300px">
+              <button class="btn btn-primary" (click)="nlu_text()">Buscar</button>
               <h2></h2>
             </div>
           </form>
