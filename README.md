@@ -56,28 +56,11 @@ curl --user "apikey:{apikey}" "{url}/v1/models?version=2019-07-12"
 ```
 
 ## Ejecutando las pruebas ⚙️
+Se puede hacer busquedas por marca o modelo.
+<img width="960" alt="inicio" src="https://user-images.githubusercontent.com/46906169/88119307-ace50300-cb85-11ea-9e9b-5ac0a5041fc3.PNG">
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+<img width="947" alt="secd" src="https://user-images.githubusercontent.com/46906169/88119819-1e718100-cb87-11ea-96ca-ce1298d64697.PNG">
 
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
 
 ## Construido con 🛠️
 
